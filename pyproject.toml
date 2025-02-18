@@ -1,5 +1,5 @@
 [build-system]
-requires = ["hatchling", "setuptools", "wheel", "pip"]
+requires = ["setuptools>=61", "wheel", "pip"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -34,7 +34,7 @@ dependencies = [
   "matplotlib",
   "cython",
   "llvmlite>=0.41.1",
-  "setuptools<=71.1.0",
+  "torch>=2.6.0",
   "madmom",
 ]
 
