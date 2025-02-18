@@ -67,4 +67,4 @@ packages = ["src/allin1"]
 no-build-isolation-package = ["madmom"]
 
 [tool.uv.sources]
-madmom = { git = "https://github.com/Nek/madmom.git" }
+madmom = { git = "https://github.com/Nek/madmom" }

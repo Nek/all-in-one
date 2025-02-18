@@ -62,7 +62,7 @@ llvmlite==0.44.0
     # via
     #   allin1 (pyproject.toml)
     #   numba
-madmom @ git+https://github.com/Nek/madmom.git@149298e891de2ff05fe84c8b90372243700b4175
+madmom @ git+https://github.com/Nek/madmom@149298e891de2ff05fe84c8b90372243700b4175
     # via allin1 (pyproject.toml)
 markupsafe==3.0.2
     # via jinja2

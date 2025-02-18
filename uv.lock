@@ -164,7 +164,7 @@ requires-dist = [
     { name = "librosa" },
     { name = "lightning", marker = "extra == 'train'" },
     { name = "llvmlite", specifier = ">=0.41.1" },
-    { name = "madmom", git = "https://github.com/Nek/madmom.git" },
+    { name = "madmom", git = "https://github.com/Nek/madmom" },
     { name = "matplotlib" },
     { name = "mir-eval", marker = "extra == 'train'" },
     { name = "natten", marker = "platform_system == 'Darwin'" },
@@ -1117,7 +1117,7 @@ wheels = [
 [[package]]
 name = "madmom"
 version = "0.17.dev0"
-source = { git = "https://github.com/Nek/madmom.git#149298e891de2ff05fe84c8b90372243700b4175" }
+source = { git = "https://github.com/Nek/madmom#149298e891de2ff05fe84c8b90372243700b4175" }
 
 [[package]]
 name = "markupsafe"
@@ -1425,8 +1425,8 @@ name = "natten"
 version = "0.17.4"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "packaging" },
-    { name = "torch" },
+    { name = "packaging", marker = "sys_platform != 'linux'" },
+    { name = "torch", marker = "sys_platform != 'linux'" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/9d/90/4440b9a19bd4966fda8f9e7f1470f62144428a75ac0a2b5e7facca1ea205/natten-0.17.4.tar.gz", hash = "sha256:9834385920d6ec0c7454c9fd7d9d681c7c24d261b158489b40b491787b6c7358", size = 10854271 }
 
