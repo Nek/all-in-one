@@ -1,6 +1,6 @@
 [build-system]
 requires = ["hatchling", "setuptools", "wheel", "pip"]
-build-backend = "hatchling.build"
+build-backend = "setuptools.build_meta"
 
 [project]
 name = "allin1"
@@ -8,7 +8,7 @@ dynamic = ["version"]
 description = "All-In-One Music Structure Analyzer"
 readme = "README.md"
 requires-python = ">=3.9"
-license = "MIT"
+license = { text = "MIT" }
 keywords = ["music", "beat", "downbeat", "tracking", "structure", "analysis", "allin1"]
 authors = [
   { name = "Taejun Kim", email = "taejun@kaist.ac.kr" },
