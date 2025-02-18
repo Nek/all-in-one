@@ -24,7 +24,7 @@ def analyze(
   visualize: Union[bool, PathLike] = False,
   sonify: Union[bool, PathLike] = False,
   model: str = 'harmonix-all',
-  device: str = 'mps' if torch.mps.is_available() else 'cpu',
+  device: str = 'cuda' if torch.cuda.is_available() else 'cpu',
   include_activations: bool = False,
   include_embeddings: bool = False,
   demix_dir: PathLike = './demix',
