@@ -33,10 +33,10 @@ dependencies = [
   "matplotlib",
   "cython",
   "llvmlite>=0.41.1",
-  "torch>=2.6.0",
   "madmom",
-  "natten>=0.17.5",
   "setuptools===61",
+  "wheel>=0.45.1",
+  "natten>=0.17.5",
 ]
 
 [project.optional-dependencies]

@@ -140,9 +140,11 @@ dependencies = [
     { name = "llvmlite" },
     { name = "madmom" },
     { name = "matplotlib" },
+    { name = "natten" },
     { name = "numpy" },
     { name = "omegaconf" },
-    { name = "torch" },
+    { name = "setuptools" },
+    { name = "wheel" },
 ]
 
 [package.optional-dependencies]
@@ -166,12 +168,14 @@ requires-dist = [
     { name = "madmom", directory = "libs/madmom" },
     { name = "matplotlib" },
     { name = "mir-eval", marker = "extra == 'train'" },
+    { name = "natten", specifier = ">=0.17.5" },
     { name = "numpy", specifier = ">=2" },
     { name = "numpy", marker = "extra == 'train'", specifier = ">=2" },
     { name = "omegaconf" },
+    { name = "setuptools", specifier = "===61" },
     { name = "timm", marker = "extra == 'train'" },
-    { name = "torch", specifier = ">=2.6.0" },
     { name = "wandb", marker = "extra == 'train'" },
+    { name = "wheel", specifier = ">=0.45.1" },
 ]
 
 [[package]]
@@ -1419,6 +1423,16 @@ wheels = [
 ]
 
 [[package]]
+name = "natten"
+version = "0.17.5"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "packaging" },
+    { name = "torch" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/e3/b5/5beafec5f0bb9612a16dde317bb56ea9754b7160f2b179e602e0ff1744d5/natten-0.17.5.tar.gz", hash = "sha256:adb23ad0905ce8e51ceb597df46383bc51bc1e1be54260ce4f85076d103ae3c5", size = 10856638 }
+
+[[package]]
 name = "networkx"
 version = "3.2.1"
 source = { registry = "https://pypi.org/simple" }
@@ -2329,11 +2343,11 @@ wheels = [
 
 [[package]]
 name = "setuptools"
-version = "75.8.0"
+version = "61.0.0"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/92/ec/089608b791d210aec4e7f97488e67ab0d33add3efccb83a056cbafe3a2a6/setuptools-75.8.0.tar.gz", hash = "sha256:c5afc8f407c626b8313a86e10311dd3f661c6cd9c09d4bf8c15c0e11f9f2b0e6", size = 1343222 }
+sdist = { url = "https://files.pythonhosted.org/packages/cf/68/bc4babfa1f0853d9164ed8f9fc97e3cc8293fa6e77277fb1a72b4de75ba5/setuptools-61.0.0.tar.gz", hash = "sha256:6221e37dc86fcdc9dad9d9eb2002e9f9798fe4aca1bf18f280e66e50c0eb7fca", size = 2498379 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/69/8a/b9dc7678803429e4a3bc9ba462fa3dd9066824d3c607490235c6a796be5a/setuptools-75.8.0-py3-none-any.whl", hash = "sha256:e3982f444617239225d675215d51f6ba05f845d4eec313da4418fdbb56fb27e3", size = 1228782 },
+    { url = "https://files.pythonhosted.org/packages/50/09/2e7557fff6a272e795930229f17a0a0bc62e11069f0f859ebf961c19ed62/setuptools-61.0.0-py3-none-any.whl", hash = "sha256:ad88b13f3dc60420259c9877486908ddad12c7befaff0d624c7190f742abd64f", size = 1138401 },
 ]
 
 [[package]]
@@ -2666,6 +2680,15 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/bd/be/ef3c78ab14a631558f639ab3a8379efee6f7d529e3bbf9efb0e17472495b/wandb-0.19.6-py3-none-musllinux_1_2_x86_64.whl", hash = "sha256:2e8dc997eb3ae5f22f5a1c3d4f3b30c28398dda45b9dbada9ff20b8d3984d3e2", size = 20938943 },
     { url = "https://files.pythonhosted.org/packages/b6/43/2f9c71a1fe77a97e9d32b4828f1dd685ac545442f8dfbf703eac8128056f/wandb-0.19.6-py3-none-win32.whl", hash = "sha256:c0127d99e98202dc2471d44b920129c2c9242fb3a6b52a7aa8bbf9ffa35173e7", size = 20230403 },
     { url = "https://files.pythonhosted.org/packages/fd/b2/a9ffa91c43dbe2a6687467f3aa196947b7532592879738665be5c0db17c3/wandb-0.19.6-py3-none-win_amd64.whl", hash = "sha256:8688a4f724d37a90075312e8dccffd948adbe8b6bcb82f9d2b38b764b53269fb", size = 20230407 },
+]
+
+[[package]]
+name = "wheel"
+version = "0.45.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/8a/98/2d9906746cdc6a6ef809ae6338005b3f21bb568bea3165cfc6a243fdc25c/wheel-0.45.1.tar.gz", hash = "sha256:661e1abd9198507b1409a20c02106d9670b2576e916d58f520316666abca6729", size = 107545 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/0b/2c/87f3254fd8ffd29e4c02732eee68a83a1d3c346ae39bc6822dcbcb697f2b/wheel-0.45.1-py3-none-any.whl", hash = "sha256:708e7481cc80179af0e556bbf0cc00b8444c7321e2700b8d8580231d13017248", size = 72494 },
 ]
 
 [[package]]
