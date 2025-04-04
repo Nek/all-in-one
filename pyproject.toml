@@ -36,8 +36,8 @@ dependencies = [
   "madmom",
   "setuptools===61",
   "wheel>=0.45.1",
-  "natten>=0.17.5",
   "torch>=2.6.0",
+  "natten",
 ]
 
 [project.optional-dependencies]
@@ -70,3 +70,4 @@ no-build-isolation-package = ["madmom", "natten"]
 
 [tool.uv.sources]
 madmom = { path = "libs/madmom" }
+natten = { path = "libs/natten" }

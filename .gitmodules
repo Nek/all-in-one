@@ -1,3 +1,6 @@
 [submodule "libs/madmom"]
 	path = libs/madmom
 	url = https://github.com/Nek/madmom
+[submodule "libs/natten"]
+	path = libs/natten
+	url = git@github.com:Nek/NATTEN.git

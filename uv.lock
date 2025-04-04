@@ -169,7 +169,7 @@ requires-dist = [
     { name = "madmom", directory = "libs/madmom" },
     { name = "matplotlib" },
     { name = "mir-eval", marker = "extra == 'train'" },
-    { name = "natten", specifier = ">=0.17.5" },
+    { name = "natten", directory = "libs/natten" },
     { name = "numpy", specifier = ">=2" },
     { name = "numpy", marker = "extra == 'train'", specifier = ">=2" },
     { name = "omegaconf" },
@@ -1426,13 +1426,20 @@ wheels = [
 
 [[package]]
 name = "natten"
-version = "0.17.5"
-source = { registry = "https://pypi.org/simple" }
+version = "0.17.6.dev0"
+source = { directory = "libs/natten" }
 dependencies = [
     { name = "packaging" },
     { name = "torch" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/e3/b5/5beafec5f0bb9612a16dde317bb56ea9754b7160f2b179e602e0ff1744d5/natten-0.17.5.tar.gz", hash = "sha256:adb23ad0905ce8e51ceb597df46383bc51bc1e1be54260ce4f85076d103ae3c5", size = 10856638 }
+
+[package.metadata]
+requires-dist = [
+    { name = "fvcore", marker = "extra == 'all'", specifier = ">=0.1.5,<0.1.6" },
+    { name = "fvcore", marker = "extra == 'dev'", specifier = ">=0.1.5,<0.1.6" },
+    { name = "packaging" },
+    { name = "torch", specifier = ">=2.0.0" },
+]
 
 [[package]]
 name = "networkx"
