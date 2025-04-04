@@ -26,7 +26,6 @@ classifiers = [
 dependencies = [
   "numpy>=2",
   "librosa",
-  "natten; platform_system == 'Darwin'",
   "demucs",
   "hydra-core",
   "omegaconf",
@@ -36,6 +35,8 @@ dependencies = [
   "llvmlite>=0.41.1",
   "torch>=2.6.0",
   "madmom",
+  "natten>=0.17.5",
+  "setuptools===61",
 ]
 
 [project.optional-dependencies]
