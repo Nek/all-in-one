@@ -144,6 +144,7 @@ dependencies = [
     { name = "numpy" },
     { name = "omegaconf" },
     { name = "setuptools" },
+    { name = "torch" },
     { name = "wheel" },
 ]
 
@@ -174,6 +175,7 @@ requires-dist = [
     { name = "omegaconf" },
     { name = "setuptools", specifier = "===61" },
     { name = "timm", marker = "extra == 'train'" },
+    { name = "torch", specifier = ">=2.6.0" },
     { name = "wandb", marker = "extra == 'train'" },
     { name = "wheel", specifier = ">=0.45.1" },
 ]
