@@ -33,10 +33,10 @@ dependencies = [
   "matplotlib",
   "cython",
   "llvmlite>=0.41.1",
-  "madmom",
   "setuptools===61",
   "wheel>=0.45.1",
   "torch>=2.6.0",
+  "madmom",
 ]
 
 [project.optional-dependencies]
@@ -68,4 +68,4 @@ packages = ["src/allin1"]
 no-build-isolation-package = ["madmom", "natten"]
 
 [tool.uv.sources]
-madmom = { path = "libs/madmom" }
+madmom = { git = "https://github.com/Nek/madmom.git" }

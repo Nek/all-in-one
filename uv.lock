@@ -165,7 +165,7 @@ requires-dist = [
     { name = "librosa" },
     { name = "lightning", marker = "extra == 'train'" },
     { name = "llvmlite", specifier = ">=0.41.1" },
-    { name = "madmom", directory = "libs/madmom" },
+    { name = "madmom", git = "https://github.com/Nek/madmom.git" },
     { name = "matplotlib" },
     { name = "mir-eval", marker = "extra == 'train'" },
     { name = "numpy", specifier = ">=2" },
@@ -1119,7 +1119,7 @@ wheels = [
 [[package]]
 name = "madmom"
 version = "0.17.dev0"
-source = { directory = "libs/madmom" }
+source = { git = "https://github.com/Nek/madmom.git#149298e891de2ff05fe84c8b90372243700b4175" }
 
 [[package]]
 name = "markupsafe"
