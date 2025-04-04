@@ -1,0 +1,3 @@
+[submodule "libs/madmom"]
+	path = libs/madmom
+	url = https://github.com/Nek/madmom
