@@ -65,7 +65,7 @@ path = "src/allin1/__about__.py"
 packages = ["src/allin1"]
 
 [tool.uv]
-no-build-isolation-package = ["madmom"]
+no-build-isolation-package = ["madmom", "natten"]
 
 [tool.uv.sources]
 madmom = { path = "libs/madmom" }
